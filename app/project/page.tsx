@@ -1,13 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import ProjectCard from "../components/ProjectCard";
 
 const Project = () => {
   return (
     <>
-      <div
-        className="flex flex-wrap h-fit my-10
-      "
-      >
+      <div className="flex flex-wrap h-fit my-10">
         <div className="w-full md:w-1/2 flex flex-col justify-center items-center py-12">
           <h1 className="text-6xl font-extrabold my-5 transition duration-500 hover:text-blue-600">
             projects.
@@ -17,71 +15,43 @@ const Project = () => {
             experiments to passion projects
           </p>
         </div>
-        <div className="w-full md:w-1/2 flex justify-center items-center ">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 gap-x-5">
+        <div className="w-full md:w-1/2 flex justify-center items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 gap-x-5 md:h-screen p-6">
             {/* Project 1 */}
-            <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <Image
-                src="/1.png"
-                alt="Project 1"
-                className="h-64 w-full object-cover"
-                width={250}
-                height={250}
-              />
-              <div className="p-4">
-                <h2 className="text-xl font-semibold mb-2">Project Title 1</h2>
-                <p className="text-gray-600">Project description goes here.</p>
-                {/* Add icons or additional information here */}
-              </div>
-            </div>
+            <ProjectCard
+              title="Med Me"
+              imageSrc="/1.png"
+              description="Blogs from a pre-med student"
+              icons={["react"]}
+              altText="med me"
+            />
 
             {/* Project 2 */}
-            <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <Image
-                src="/2.png"
-                alt="Project 2"
-                className="h-64 w-full object-cover"
-                width={250}
-                height={250}
-              />
-              <div className="p-4">
-                <h2 className="text-xl font-semibold mb-2">Project Title 2</h2>
-                <p className="text-gray-600">Project description goes here.</p>
-                {/* Add icons or additional information here */}
-              </div>
-            </div>
+            <ProjectCard
+              title="Alumni Event"
+              imageSrc="/2.png"
+              description="Website for an alumnus event"
+              icons={["react"]}
+              altText="med me"
+            />
 
             {/* Project 3 */}
-            <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <Image
-                src="/3.png"
-                alt="Project 3"
-                className="h-64 w-full object-cover"
-                width={250}
-                height={250}
-              />
-              <div className="p-4">
-                <h2 className="text-xl font-semibold mb-2">Project Title 3</h2>
-                <p className="text-gray-600">Project description goes here.</p>
-                {/* Add icons or additional information here */}
-              </div>
-            </div>
+            <ProjectCard
+              title="Leet GPT"
+              imageSrc="/3.png"
+              description="ChatGPT interface for Leetcode hints"
+              icons={["react"]}
+              altText="med me"
+            />
 
             {/* Project 4 */}
-            <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <Image
-                src="/4.png"
-                alt="Project 4"
-                className="h-64 w-full object-cover"
-                width={250}
-                height={250}
-              />
-              <div className="p-4">
-                <h2 className="text-xl font-semibold mb-2">Project Title 4</h2>
-                <p className="text-gray-600">Project description goes here.</p>
-                {/* Add icons or additional information here */}
-              </div>
-            </div>
+            <ProjectCard
+              title="Airwalker"
+              imageSrc="/4.png"
+              description="Website for drone business."
+              icons={["react"]}
+              altText="med me"
+            />
           </div>
         </div>
       </div>
