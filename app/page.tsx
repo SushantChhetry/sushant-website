@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 // components
 import Nav from "./components/Nav";
@@ -59,7 +60,7 @@ export default function Home() {
               resume.
             </button>
             <button className="relative text-2xl transition duration-300 after:content-[''] after:absolute after:w-0 after:h-0 after:border-b-2 after:border-blue-600 after:left-1/2 after:bottom-0 after:-translate-x-1/2 hover:after:w-full hover:opacity-100">
-              <Link href='#hire'>hire me.</Link>
+              <Link href="#hire">hire me.</Link>
             </button>
           </span>
           <p className="md:p-10 text-center text-xl md:text-2xl md:m-8 md:px-32 px-10">
