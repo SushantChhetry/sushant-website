@@ -51,7 +51,7 @@ const Project = () => {
             />
           </Link>
           {/* Project 4 */}
-          <Link href="https:/www.google.com" target="_blank">
+          {/* <Link href="https:/www.google.com" target="_blank">
             <ProjectCard
               title="Airwalker"
               imageSrc="/4.png"
@@ -59,7 +59,7 @@ const Project = () => {
               icons={["react"]}
               altText="med me"
             />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
