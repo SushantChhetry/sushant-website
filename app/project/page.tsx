@@ -11,8 +11,8 @@ const Project = () => {
           projects.
         </h1>
         <p className="md:text-xl text-center text-block m-4 md:m-9 md:p-14">
-          Check out the cool stuff I've been building - from coding experiments
-          to passion projects.
+          Check out the cool stuff I&apos;ve been building - from coding
+          experiments to passion projects.
         </p>
       </div>
       <div className="w-full md:w-1/2 flex justify-center items-center">
