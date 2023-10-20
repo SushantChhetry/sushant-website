@@ -25,26 +25,25 @@ const Creative = () => {
 
   return (
     <div className="flex flex-wrap md:h-screen h-fit flex-col-reverse md:flex-row m-5">
-      <div className="w-full md:w-1/2 flex justify-center items-center flex p-8 flex-col">
+      <div className="w-full md:w-1/2 flex justify-center items-center  p-8 flex-col">
         <h1 className="text-4xl font-semibold mb-4">Recent Posts</h1>
         <div className="space-y-4">
           {posts.map((post, index) => (
             <div
               key={index}
-              className="relative bg-white rounded-lg p-4 shadow-md transition transform hover:scale-105 hover:shadow-lg "
+              className="relative bg-white rounded-lg p-4 shadow-md  transform hover:scale-105 hover:shadow-lg transition duration-500 hover:text-blue-600"
             >
-              <div>
-                <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
-                <p className="text-gray-600">{post.desc}</p>
-                <a
-                  href={post.url}
-                  className="text-blue-600 hover:underline block mt-2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Read more
-                </a>
-              </div>
+              <a
+                href={post.url}
+                className="text-black-600  block mt-2 "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div>
+                  <h2 className="text-xl font-semibold mb-2 ">{post.title}</h2>
+                  <p className="text-gray-600">{post.desc}</p>
+                </div>
+              </a>
             </div>
           ))}
         </div>

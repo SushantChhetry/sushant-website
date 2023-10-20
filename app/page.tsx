@@ -3,11 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 // components
-import Nav from "./components/Nav";
-import RandomPattern from "./components/RandomPattern";
-import MouseFollowPattern from "./components/MouseFollowPattern";
-import StickyIcons from "./components/StickyIcons";
-import Footer from "./components/Footer";
+import Nav from "../components/Nav";
+import RandomPattern from "../components/RandomPattern";
+import MouseFollowPattern from "../components/MouseFollowPattern";
+import StickyIcons from "../components/StickyIcons";
+import Footer from "../components/Footer";
 
 // pages
 import Contact from "./contact/page";
@@ -64,9 +64,8 @@ export default function Home() {
             </button>
           </span>
           <p className="md:p-10 text-center text-xl md:text-2xl md:m-8 md:px-32 px-10">
-            I&apos;m a creative engineer who builds delightful web experiences.
-            I can advise your company about <strong>web platform</strong>,
-            performance, creative user interactions, and usable machine learning
+            I&apos;m a creative software engineer who builds delightful web
+            experiences and applications.
           </p>
         </div>
       </div>

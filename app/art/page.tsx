@@ -1,5 +1,5 @@
 import React from "react";
-import ImageGallery from "../components/ImageGallery";
+import ImageGallery from "@/components/ImageGallery";
 
 function Art() {
   return (

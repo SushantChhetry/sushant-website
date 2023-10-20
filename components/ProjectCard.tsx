@@ -20,25 +20,32 @@ const ProjectCard: React.FC<ProjectProps> = ({
     react: <FaReact />,
     // Add more icon mappings here if needed
   };
+
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105">
       <Image
         src={imageSrc}
         alt={title}
-        className="h-64 w-full object-cover"
+        className="w-full object-cover"
         width={250}
         height={250}
       />
-      <div className="p-4">
-        <h2 className="text-xl font-semibold mb-2">{title}</h2>
+      <div className="p-2">
+        <h2 className="text-xl font-semibold">{title}</h2>
         <div className="text-gray-600">{description}</div>
       </div>
-      {icons.map((icon, index) => {
-        if (iconMap[icon]) {
-          return <div key={index}>{iconMap[icon]}</div>;
-        }
-        return null; // Return null for unsupported icons
-      })}
+      <div className="flex justify-center mt-2">
+        {icons.map((icon, index) => {
+          if (iconMap[icon]) {
+            return (
+              <div key={index} className="m-1">
+                {iconMap[icon]}
+              </div>
+            );
+          }
+          return null; // Return null for unsupported icons
+        })}
+      </div>
     </div>
   );
 };

@@ -1,23 +1,24 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "@/components/ProjectCard";
 
 const Project = () => {
   return (
-    <>
-      <div className="flex flex-wrap h-fit my-10">
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-center py-12">
-          <h1 className="text-6xl font-extrabold my-5 transition duration-500 hover:text-blue-600">
-            projects.
-          </h1>
-          <p className="md:text-xl text-center text-block m-4 md:m-9 md:p-14">
-            Check out the cool stuff I&apos;ve been building - from coding
-            experiments to passion projects
-          </p>
-        </div>
-        <div className="w-full md:w-1/2 flex justify-center items-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 gap-x-5 md:h-screen p-6">
-            {/* Project 1 */}
+    <div className="flex flex-wrap min-h-screen">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center py-12">
+        <h1 className="text-6xl font-extrabold my-5 transition duration-500 hover:text-blue-600">
+          projects.
+        </h1>
+        <p className="md:text-xl text-center text-block m-4 md:m-9 md:p-14">
+          Check out the cool stuff I've been building - from coding experiments
+          to passion projects.
+        </p>
+      </div>
+      <div className="w-full md:w-1/2 flex justify-center items-center">
+        <div className="flex flex-col md:flex-row p-6">
+          {/* Project 1 */}
+          <Link href="https://med-blog-chhetry.vercel.app/" target="_blank">
             <ProjectCard
               title="Med Me"
               imageSrc="/1.png"
@@ -25,8 +26,12 @@ const Project = () => {
               icons={["react"]}
               altText="med me"
             />
-
-            {/* Project 2 */}
+          </Link>
+          {/* Project 2 */}
+          <Link
+            href="https://alumni-weekend-react-app.vercel.app/"
+            target="_blank"
+          >
             <ProjectCard
               title="Alumni Event"
               imageSrc="/2.png"
@@ -34,8 +39,9 @@ const Project = () => {
               icons={["react"]}
               altText="med me"
             />
-
-            {/* Project 3 */}
+          </Link>
+          {/* Project 3 */}
+          <Link href="https://leet-gpt.vercel.app/" target="_blank">
             <ProjectCard
               title="Leet GPT"
               imageSrc="/3.png"
@@ -43,19 +49,20 @@ const Project = () => {
               icons={["react"]}
               altText="med me"
             />
-
-            {/* Project 4 */}
+          </Link>
+          {/* Project 4 */}
+          <Link href="https:/www.google.com" target="_blank">
             <ProjectCard
               title="Airwalker"
               imageSrc="/4.png"
-              description="Website for drone business."
+              description="Website for a drone business."
               icons={["react"]}
               altText="med me"
             />
-          </div>
+          </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

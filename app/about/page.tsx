@@ -14,7 +14,7 @@ function About() {
             className="rounded-full shadow-lg my-13  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
           />
         </div>
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-center py-12">
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center sm:py-5 py-12">
           <h1 className="text-6xl	 font-extrabold my-5 transition duration-500 hover:text-blue-600">
             about.
           </h1>

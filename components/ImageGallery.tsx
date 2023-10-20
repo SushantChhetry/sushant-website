@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -37,7 +37,7 @@ function ImageGallery(): JSX.Element {
 
   // Render your image gallery using the retrieved image URLs
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap ">
       {imageUrls.map((url: string) => (
         <div key={url} className="w-1/2 md:w-1/3 lg:w-1/4 p-2">
           <Image
@@ -46,6 +46,7 @@ function ImageGallery(): JSX.Element {
             layout="responsive"
             width={800} // Adjust these values to your layout needs
             height={600} // Adjust these values to your layout needs
+            className="transition-all duration-500 hover:opacity-50"
           />
         </div>
       ))}
